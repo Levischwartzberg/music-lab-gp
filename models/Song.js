@@ -2,30 +2,33 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../connection/deets');
 
-class Post extends Model {}
+class Song extends Model {}
 
-Post.init(
+Song.init(
   {
-
-    post_title: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    post_content: {
+    data: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    post_date: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    posted: {
+      type: DataTypes.BOOLEAN,
+      setDefault: false,
+    },
+    comments: {
+      type: DataTypes.JSON, // We will have to maybe set up a class or something to generate a new object if null.
+
     }
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post',
+    modelName: 'song',
   }
 );
 
-module.exports = Post;
+module.exports = Song;
