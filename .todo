@@ -1,1 +1,58 @@
-Just a shared todo list.
+Music Site
+
+
+Technologies and Other Schtuff
+recording sounds must be... how to store this
+
+Design Ideas
+IBM Plex Sans - Font
+
+
+
+
+- Create account / Login - satisfies forms and auth
+- set of sounds 6-8
+- See how to record and save
+    Possibly?: https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API/Recording_a_media_element
+
+- Homepage - General site information with a big ol login-signup form field.
+- Navigation - lets keep it simple, just icons
+    -login/out
+    -create
+    -community
+    -dashboard
+- Dashboard with the options
+    - Has option to create new
+    - View created "songs" w/ delete,share?
+    - Community Link
+- Song post
+    - The song, maybe upload a cover image, or even hand-create one.........
+
+- Making Music
+    - Need to record presses and the time between, then we will let the computer generate the sound
+
+
+- Playing music back
+    - Read the recording and play the song inserting the sounds where they need to be and saving the spaces between.
+    - Be fun if people could switch out the set of sounds on the fly. Record it with farm animals, play it back with drums or vice versa
+
+- Community
+    - posts with the song
+    - ability to comment, must be logged to comment however anyone can see a post.
+
+
+Wishlist
+
+- Additional sets of sounds to use to create songs with.
+- Maybe some kind of simple art thingie to make custom album artwork.
+- Sound Cloud integration
+- Download sound file to machine for publish wherever they want to.
+- Song categorization
+
+- Community
+    - Ability to report songs to site owner
+
+
+"I didn't get to add this but its a downstream item"
+- Upload own sounds to use to make a song
+- Ability to download an audio file with the music they made.
