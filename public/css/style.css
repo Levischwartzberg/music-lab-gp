@@ -1,0 +1,179 @@
+h1, h2, h3, h4, h5 {
+    font-weight:bold;
+}
+
+h1 {
+    color: #383838;
+}
+
+h4 {
+    text-align: center;
+    color: #c973ff;
+}
+
+hr {
+    border: 1px solid gray;
+    width: 100%;
+    margin: 0px 15px 25px;
+}
+
+#output {
+     padding: 15px;
+     font-size: 15px;
+ }
+
+
+.hero {
+    background-image: linear-gradient(#a141dd, #ebccff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cust-card-dark {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #242424;
+    color: white;
+    background-clip: border-box;
+    border-radius: .25rem;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;    
+}
+
+.comm-card-dark {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #242424;
+    color: white;
+    background-clip: border-box;
+    border-radius: .25rem;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 450px;     */
+}
+
+.bg-dark-nav {
+    background-color:#242424;
+    color: #c973ff;
+}
+
+.bg-dark-footer {
+    background-color:#242424;
+    color: #c973ff;
+    height: 350px;
+}
+
+.card-img-height {
+    height: 250px;
+    width: 100%;
+}
+
+.display-height {
+    height: 500px;
+    width: 100%;
+}
+
+.src-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;    
+    user-select: none;
+    background-color: #28a745;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.src-btn:hover {
+    background-color: #00ff00;
+    color: black;
+    
+}
+
+.home-btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        /* background-color: transparent;
+        border: 1px solid transparent; */
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-top: 20px;
+        width: 100%;    
+}
+
+
+
+.card .card-body {
+    padding: 1.88rem 1.81rem;
+    margin-bottom: 35px;
+}
+
+.card-body-index {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.card-body-byte {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.fa-note {
+    font-weight: 900;
+    color: #c973ff;
+    font-size: 40px;
+
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important
+}
+
+.display-3 {
+    font-size: 3.5rem
+}
+
+.daily-p {
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 0px; */
+}
+
+.hide{
+    display: none;
+}
