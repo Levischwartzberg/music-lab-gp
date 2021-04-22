@@ -10,30 +10,28 @@ Comment.init(
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
-      primaryKey: true,
-      allowNull: false
+      primaryKey: true
     },
     user_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'user',
         key: 'id'
       }
     },
-    user_name: {
-      type: DataTypes.STRING,
+    song_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'user',
-        key: 'username'
+        model: 'song',
+        key: 'id',
       }
     },
     comment: {
       type: DataTypes.TEXT,
       allowNull: false,
-    },
-
+    }
   },
   {
     sequelize,
