@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author":"Levi, Anthony, Luke and Drew",
+  "author": "Levi, Anthony, Luke and Drew",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
