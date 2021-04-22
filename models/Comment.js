@@ -3,32 +3,45 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../connection/deets');
 
-class User extends Model {}
+class Comment extends Model {}
 
-User.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true,
       allowNull: false
-
     },
-    username: {
+    user_id: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
     },
-    password: {
+    user_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      references: {
+        model: 'user',
+        key: 'username'
+      }
+    },
+    comment: {
       type: DataTypes.TEXT,
       allowNull: false,
-    }
+    },
+
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    timestamps: true,
+    modelName: 'comment',
   }
 );
 
-module.exports = User;
+module.exports = Comment;

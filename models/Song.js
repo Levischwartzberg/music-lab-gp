@@ -6,26 +6,47 @@ class Song extends Model {}
 
 Song.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+      allowNull: false
+
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    data: {
+    description: {
+      type: DataTypes.STRING,
+    },
+    creator_id: {
+      type: DataTypes.STRING,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    creator_name: {
+      type: DataTypes.STRING,
+      references: {
+        model: 'user',
+        key: 'username',
+      },
+    },
+    song_data: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
     posted: {
       type: DataTypes.BOOLEAN,
       setDefault: false,
-    },
-    comments: {
-      type: DataTypes.JSON, // We will have to maybe set up a class or something to generate a new object if null.
-
     }
   },
   {
     sequelize,
     freezeTableName: true,
+    timestamps: true,
     underscored: true,
     modelName: 'song',
   }
