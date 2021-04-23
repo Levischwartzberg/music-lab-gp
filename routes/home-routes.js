@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const { Song, User } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findAll({
+    const dbSongData = await Song.findAll({
       include: [
         {
           model: Painting,
