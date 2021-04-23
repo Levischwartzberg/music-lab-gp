@@ -38,7 +38,9 @@ router.get('/community', async (req, res) => {
 
 router.get('/create', async (req, res) => {
   if (!req.session.logged_in) {
-    console.log("You need to login first!")
+    console.log("You need to login first!");
+    res.render('homeLogin');
+    return;
   }
   if (req.session.logged_in) {
     res.render('create');
@@ -47,23 +49,30 @@ router.get('/create', async (req, res) => {
 });
 
 router.get('/dashboard', async (req, res) => {
-  try {
-    const dbSongData = await Song.findAll({
-      where: {user_id: req.session.user_id}
-    });
-    console.log(req.session.user_id); 
-
-    const songs = dbSongData.map((song) =>
-      song.get({ plain: true })
-    );
-
-    res.render('dashboard', {
-      songs,
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+  if (req.session.logged_in) {
+    try {
+      const dbSongData = await Song.findAll({
+        where: {user_id: req.session.user_id}
+      });
+      console.log(req.session.user_id); 
+  
+      const songs = dbSongData.map((song) =>
+        song.get({ plain: true })
+      );
+  
+      res.render('dashboard', {
+        songs,
+        loggedIn: req.session.loggedIn,
+      });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+  }
+  else {
+    console.log("You need to login first!");
+    res.render('homeLogin');
+    return;
   }
 });
 
