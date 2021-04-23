@@ -65,10 +65,12 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
+  console.log(` \n\n test \n\n`);
+  console.log(` \n\n ${req.session.logged_in} \n\n`)
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.render('homeLogin', { 
-        logged_in: req.session.logged_in 
+        logged_in: false
       });
     });
   } else {
