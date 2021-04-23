@@ -37,6 +37,9 @@ router.get('/community', async (req, res) => {
 });
 
 router.get('/create', async (req, res) => {
+  if (!req.session.loggedIn) {
+    console.log("You need to login first!")
+  }
   if (req.session.loggedIn) {
     res.render('create');
     return;
