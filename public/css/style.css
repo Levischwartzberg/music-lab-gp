@@ -17,9 +17,25 @@ hr {
     margin: 0px 15px 25px;
 }
 
+i {
+    color: #c973ff;  
+}
+
 #output {
      padding: 15px;
      font-size: 15px;
+ }
+
+.nav-icon {
+    font-size: 30px;
+    padding-right: 10px;
+
+ }
+
+ .dash-icon {
+    font-size: 150px;
+    text-align: center;
+    margin-top: 55px;
  }
 
 
