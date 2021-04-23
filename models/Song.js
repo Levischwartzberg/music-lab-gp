@@ -6,13 +6,7 @@ class Song extends Model {}
 
 Song.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true,
-      allowNull: false
-
-    },
+    
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -20,18 +14,11 @@ Song.init(
     description: {
       type: DataTypes.STRING,
     },
-    creator_id: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'user',
         key: 'id',
-      },
-    },
-    creator_name: {
-      type: DataTypes.STRING,
-      references: {
-        model: 'user',
-        key: 'username',
       },
     },
     song_data: {
