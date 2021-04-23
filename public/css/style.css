@@ -25,6 +25,10 @@ a:hover {
   text-decoration: none;  
 }
 
+footer {
+    margin-top: 25px;
+}
+
 #output {
      padding: 15px;
      font-size: 15px;
@@ -74,6 +78,18 @@ a:hover {
      text-decoration: none;
      cursor: pointer;
      text-shadow: 0px 0px 8px #c973ff;
+ }
+
+ .btn {
+    background-color: #aa20ff;
+    border-color: #c973ff;
+    color: #fff;
+ }
+
+ .btn:hover {
+    background-color: #c973ff;
+    border-color: #fd4afd;    
+    color: #fff;
  }
 
  .home-btn {
@@ -204,27 +220,6 @@ a:hover {
     width: 100%;
 }
 
-.src-btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;    
-    user-select: none;
-    background-color: #28a745;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.src-btn:hover {
-    background-color: #00ff00;
-    color: black;
-    
-}
 
 .home-btn {
         display: inline-block;
