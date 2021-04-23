@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Songs</title>
+</head>
+<body>
+    <header>
+        <!-- <nav class="navbar navbar-dark bg-dark-nav">
+            <a class="navbar-brand" style="color:#c973ff" href="index.html">Music Lab</a>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-nav">
+            <div class="container-fluid">
+         <!-- <img src="./assets/images/pinetreeSVG.png" width="30" height="30" class="d-inline-block align-top" alt="campground_locator_icon">   -->
+         <a  class="navbar-brand" style="color:#c973ff" href="index.html"><i class="fas fa-flask"></i><i class="fas fa-microphone-alt"></i>Music Lab</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                 <!-- <a class="nav-link active" aria-current="page" href="./index.html">Home</a> -->
+                 <a class="top-nav" href="./create.html"><i class="nav-icon fas fa-plus"></i> Create</a>
+                 <a class="top-nav" href="./community.html"><i class="nav-icon fas fa-blog"></i> Community Songs</a>
+                 <a class="top-nav" href="./dashboard.html"><i class="nav-icon fas fa-user-circle"></i> Dashboard</a>
+                 <!-- <a class="top-nav" href="./blog.html"><i class="nav-icon fas fa-users"></i> Blog</a> -->
+                 <a class="top-nav" href="index.html"><i class="nav-icon fas fa-sign-out-alt"></i>Logout</a>
+                  <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>        
+        <div class="hero jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1 class="display-4">Welcome to Music Lab</h1>
+            <p class="lead"><span style="color: white;">An app for creating music using various sounds. Users can pick and choose sounds and mix together to create music files of thier own</span></p>
+            <!-- <form class="form-inline my-2 my-lg-2">
+                <div>
+                    <input id="citysearch" class="form-ctrl mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="searchBtn" class="src-btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </form> -->
+            </div>
+        </div>
+        <div class="container">
+            <!-- row columns start here -->
+            <div id="search-results" class="row">
+                <!--card 1-->
+                <div class="cust-card-dark col-8">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body">                        
+                        <h4 class="card-title">Album Art Display Here</h4>
+                        <img src="">
+                                               
+                    </div>
+                </div>                             
+            </div>            
+            <div id="search-results" class="row">
+                <!--card 1-->
+                <div class="cust-card-dark col-12">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body">                        
+                        <h4 class="card-title">Community Posts</h4>
+                        <div>
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>                          
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>                
+            </div>
+            <div class="flex-row">
+                <textarea class="form-control textarea" id="comment-content" data-id={{id}} placeholder="Leave a comment..."></textarea>
+            </div>
+            <div class="mt-2 text-right">
+                <button class="btn btn-danger btn-sm shadow-none" id="commentBtn" type="button">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="card text-center">
+            <div class="card-body bg-dark-footer">
+              <h5 class="card-title">Music Lab</h5>
+              <p class="card-text">Copyright 2021 &copy; Fullstack Course -- University of Minnesota</p>              
+            </div>
+         </div>
+    </footer>   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>    
+</body>
+</html>

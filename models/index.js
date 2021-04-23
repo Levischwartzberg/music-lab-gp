@@ -13,6 +13,7 @@ User.hasMany(Song, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
+
 Song.hasMany(Comment, {
   foreignKey: 'song_id',
   onDelete: 'CASCADE',
