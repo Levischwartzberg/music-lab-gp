@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS music_lab;
+CREATE DATABASE music_lab;

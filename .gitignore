@@ -1,2 +1,7 @@
 /node_modules/
 .env
+DB_HOST=localhost
+DB_NAME=music_lab
+DB_USER=root
+DB_PASS=Austen@15!
+SESSION_SECRET=yohohoandabottleofrum
