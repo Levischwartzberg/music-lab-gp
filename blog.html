@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-nav">
             <div class="container-fluid">
          <!-- <img src="./assets/images/pinetreeSVG.png" width="30" height="30" class="d-inline-block align-top" alt="campground_locator_icon">   -->
-              <a  class="navbar-brand" style="color:#c973ff" href="index.html">Music Lab</a>
+         <a  class="navbar-brand" style="color:#c973ff" href="index.html"><i class="fas fa-flask"></i><i class="fas fa-microphone-alt"></i>Music Lab</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -52,7 +52,7 @@
             <!-- row columns start here -->
             <div id="search-results" class="row">
                 <!--card 1-->
-                <div class="cust-card-dark col-12">
+                <div class="cust-card-dark col-8">
                 <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
                     <div class="card-body">                        
                         <h4 class="card-title">Album Art Display Here</h4>
@@ -73,20 +73,29 @@
                     <div class="card-body">                        
                         <h4 class="card-title">Community Posts</h4>
                         <div>
-                            <p class="card-text">Post 1</p>
-                        </div>
-                        <div>
-                            <p class="card-text">Post 1</p>
-                        </div>
-                        <div>
-                            <p class="card-text">Post 1</p>
-                        </div>                          
-                        <div>
-                            <p class="card-text">Post 1</p>
-                        </div>
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>                          
+                            <div>
+                                <p class="card-text">Post 1</p>
+                            </div>
+                        </div>    
                     </div>
                 </div>                
             </div>
+            <div class="flex-row">
+                <textarea class="form-control textarea" id="comment-content" data-id={{id}}
+                  placeholder="Leave a comment..."></textarea>
+              </div>
+              <div class="mt-2 text-right">
+                <button class="btn btn-danger btn-sm shadow-none" id="commentBtn" type="button">Submit</button>
+              </div>
         </div>
     </main>
     <footer>
