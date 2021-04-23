@@ -65,6 +65,18 @@ a:hover {
      text-shadow: 0px 0px 8px #c973ff;
  }
 
+ .home-btn {
+    background-color: #aa20ff;
+    border-color: #c973ff;
+    color: #fff;
+ }
+
+ .home-btn:hover {
+    background-color: #c973ff;
+    border-color: #fd4afd;    
+    color: #fff;
+ }
+
 
 .hero {
     background-image: linear-gradient(#a141dd, #ebccff);
