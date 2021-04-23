@@ -34,7 +34,18 @@ a:hover {
     font-size: 30px;
     padding-right: 10px;
 
- }
+ } 
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.50rem;
+    font-weight: bold;
+    line-height: inherit;
+    white-space: nowrap;
+}
 
  .dash-icon {
     font-size: 150px;
@@ -168,6 +179,10 @@ a:hover {
     /* height: 450px;     */
 }
 
+.stored {
+    background-color: #5e5e5e;
+}
+
 .bg-dark-nav {
     background-color:#242424;
     color: #c973ff;
@@ -253,6 +268,18 @@ a:hover {
     font-weight: 900;
     color: #c973ff;
     font-size: 40px;
+}
+
+.fa-flask {
+    font-size: 40px;
+    color: white;
+    margin-right: 25px;
+}
+
+.fa-microphone-alt {
+    position:absolute;    
+    margin-left: -50px;
+    margin-top: 15px;
 }
 
 .hide{
