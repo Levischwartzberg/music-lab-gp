@@ -46,6 +46,57 @@ hr {
     height: 450px;    
 }
 
+.dropzone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #242424;
+    color: white;
+    background-clip: border-box;
+    border-radius: .25rem;
+    height: 100%;  
+    margin-bottom: 25px;  
+    padding: 10px;
+}
+
+.byte-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #242424;
+    color: white;
+    background-clip: border-box;
+    border-radius: .25rem;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px; 
+
+}
+
+.drop-row {    
+    display: flex;   
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+
+.drop-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;    
+    background-color: #c973ff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    margin: 3px;    
+    height: 100px;    
+}
+
 .comm-card-dark {
     position: relative;
     display: flex;
@@ -126,8 +177,6 @@ hr {
         width: 100%;    
 }
 
-
-
 .card .card-body {
     padding: 1.88rem 1.81rem;
     margin-bottom: 35px;
@@ -138,8 +187,7 @@ hr {
     padding: 1.25rem
 }
 
-.card-body-byte {
-    -ms-flex: 1 1 auto;
+.card-body-byte {    
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
@@ -150,28 +198,6 @@ hr {
     font-weight: 900;
     color: #c973ff;
     font-size: 40px;
-
-}
-
-.mb-0,
-.my-0 {
-    margin-bottom: 0 !important
-}
-
-.mr-auto,
-.mx-auto {
-    margin-right: auto !important
-}
-
-.display-3 {
-    font-size: 3.5rem
-}
-
-.daily-p {
-    line-height: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    /* padding: 0px; */
 }
 
 .hide{
