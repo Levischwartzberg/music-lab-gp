@@ -1,0 +1,139 @@
+<main>        
+        <div class="hero jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1 class="display-4">Welcome to Music Lab</h1>
+            <p class="lead"><span style="color: white;">An app for creating music using various sounds. Users can pick and choose sounds and mix together to create music files of thier own</span></p>
+            <!-- <form class="form-inline my-2 my-lg-2">
+                <div>
+                    <input id="citysearch" class="form-ctrl mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="searchBtn" class="src-btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </form> -->
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- row columns start here -->
+            <div id="" class="row">
+                <!--card 1-->
+                <div id="pad1" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="1" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Fhymn_rhodes_1.mp3"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad2" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="2" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_2.mp3"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad3" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="3" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_3.mp3"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad4" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="4" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_4.mp3"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad5" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="5" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_5.mp3"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad6" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="6" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_6.mp3"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad7" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="7" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_7.mp3"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad8" class="draggable byte-card col-lg-1 col-md-10 col-sm-12" index="8" draggable="true" ondragstart="onDragStart(event);">
+                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_rhodes_8.mp3"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <h4 style="color: black;" class="card-title">Dropzone</h4>
+            <p style="text-align: center; font-weight: bold;">Use space below to drop your sound chioces to build and hear your mix.</p>
+            <div id="" class="row">                
+                <!-- main card container -->
+                <div class="dropzone create col-12">
+                    <div id="" class="drop-row">                        
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r1c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r1c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r1c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r1c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                    </div>
+                    <div id="" class="drop-row">
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r2c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r2c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r2c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r2c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                    </div>
+                    <div id="" class="drop-row">
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r3c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r3c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r3c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r3c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                    </div>
+                    <div id="" class="drop-row">
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r4c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r4c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r4c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6" id="r4c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                        <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <button id="play"> Play </button>
+        </div>
+    </main>
