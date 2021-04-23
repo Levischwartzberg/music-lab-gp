@@ -54,3 +54,7 @@ document
   .addEventListener('submit', signupFormHandler);
 
 console.log("test");
+
+if (document.getElementById("success").textContent === "false") {
+  alert("You must log in to view this page.")
+}

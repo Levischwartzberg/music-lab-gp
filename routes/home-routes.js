@@ -39,7 +39,9 @@ router.get('/community', async (req, res) => {
 router.get('/create', async (req, res) => {
   if (!req.session.logged_in) {
     console.log("You need to login first!");
-    res.render('homeLogin');
+    res.render('homeLogin', {
+      success: false
+    });
     return;
   }
   if (req.session.logged_in) {
@@ -71,7 +73,9 @@ router.get('/dashboard', async (req, res) => {
   }
   else {
     console.log("You need to login first!");
-    res.render('homeLogin');
+    res.render('homeLogin', {
+      success: false
+    });
     return;
   }
 });
