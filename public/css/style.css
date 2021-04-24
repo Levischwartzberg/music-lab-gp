@@ -169,6 +169,19 @@ footer {
     padding: 10px;
 }
 
+div.color1 {
+    background-color: #6e8b4b;
+}
+.byte-card.color2 {
+    background-color: #a161a7;
+}
+.byte-card.color3 {
+    background-color: #30427c;
+}
+.byte-card.color4 {
+    background-color: #b19f67;
+}
+
 .byte-card {
     position: relative;
     display: flex;
@@ -178,7 +191,7 @@ footer {
     min-height: 50px;
     word-wrap: break-word;
     text-align: center;
-    background-color: #242424;
+    /* background-color: #242424; */
     color: white;
     background-clip: border-box;
     border-radius: .25rem;
@@ -187,7 +200,6 @@ footer {
     margin-right: auto;
     margin-top: 10px;
     padding: 10px;
-
 }
 
 .drop-row {    
