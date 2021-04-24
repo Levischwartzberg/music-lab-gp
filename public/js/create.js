@@ -234,7 +234,7 @@ function displayOptions(e) {
 function Highlight(event) {
     event.target.parentElement.parentElement.classList.add("highlight");
     console.log(event.target.parentElement.parentElement);
-    setTimeout(() => { event.target.parentElement.classList.remove("highlight"); }, j * 4800);
+    setTimeout(() => { event.target.parentElement.parentElement.classList.remove("highlight"); }, j * 4800);
 }
 
 
