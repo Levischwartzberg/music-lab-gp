@@ -152,6 +152,9 @@ const saveBtn = document.getElementById("save");
 saveBtn.addEventListener("click", saveGrid);
 
 function saveGrid() {
+    // const sounds = document.querySelectorAll(".sound");
+    const sounds = []
+
     const measures1 = document.querySelectorAll(".row1");
     console.log(measures1);
     const measures2 = document.querySelectorAll(".row2");
@@ -160,21 +163,21 @@ function saveGrid() {
     console.log(measures3);
     const measures4 = document.querySelectorAll(".row4");
     console.log(measures4);
-    const measures = [measures1, measures2, measures3, measures4]
+    const measures = [measures1, measures2, measures3, measures4];
+    // console.log(measures[0][0].childNodes[1].childNodes[1].childNodes[3]); //sound
     const savedArray = [ [], [], [], [] ];
 
     for(i=0; i<measures.length; i++) {
         // console.log(measures[i].childNodes.length);
         for (j=0; j<measures[i].length; j++) {
-            if (measures[i][j].childNodes.length === 0) {
+            if (measures[i][j].childNodes.length === 1) {
                 savedArray[i][j] = null;
             }
             else {
-                savedArray[i][j] = measures[i][j].childNodes[0].getAttribute("index");
+                savedArray[i][j] = measures[i][j].childNodes[1].getAttribute("index");
             }
         }
     }
-    // playSaved(savedArray);
     console.log(JSON.stringify(savedArray));
     // playSaved(JSON.stringify(savedArray));
     return savedArray;
