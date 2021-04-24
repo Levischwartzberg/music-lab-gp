@@ -232,8 +232,8 @@ function displayOptions(e) {
 }
 
 function Highlight(event) {
-    event.target.parentElement.classList.add("highlight");
-    console.log(event.target.parentElement);
+    event.target.parentElement.parentElement.classList.add("highlight");
+    console.log(event.target.parentElement.parentElement);
     setTimeout(() => { event.target.parentElement.classList.remove("highlight"); }, j * 4800);
 }
 
