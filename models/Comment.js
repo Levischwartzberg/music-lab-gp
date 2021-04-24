@@ -30,7 +30,10 @@ Comment.init(
     comment: {
       type: DataTypes.TEXT,
       allowNull: false,
-    }
+    },
+    user_name: {
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,

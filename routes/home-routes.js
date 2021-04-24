@@ -92,11 +92,14 @@ router.get('/song/:id', withAuth, async (req, res) => {
         },
         {
           model: Comment,
+          attributes: ["comment", "user_name"],
         },
       ],
     });
+    // console.log(dbSongData);
 
     const song = dbSongData.get({ plain: true });
+    // console.log(song);
     res.render('song', { song, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
