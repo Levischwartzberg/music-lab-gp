@@ -54,15 +54,21 @@ function onDragOver(event) {
 
 function onDrop(event) {
     event.preventDefault();
-    const dropzone = event.target;
+    let dropzone = event.target;
+    if (dropzone.className.includes("card-body-byte")) {
+        console.log("test");
+        dropzone = dropzone.parentElement.parentElement;
+    }
     const id = event.dataTransfer.getData('text');
     const duplicate = document.getElementById(id).className.includes("from-options");
     console.log(dropzone);
     console.log(dropzone.childNodes.length)
 
     if(dropzone.childNodes.length > 1) {
-        let newdropzone = dropzone.parentElement;
-        dropzone.remove();
+        let newdropzone = dropzone;
+        console.log(newdropzone);
+        console.log(dropzone.childNodes[1]);
+        dropzone.childNodes[1].remove();
 
         if (duplicate) {
             var nodeCopy = document.getElementById(id).cloneNode(true);
@@ -234,7 +240,7 @@ function displayOptions(e) {
 function Highlight(event) {
     event.target.parentElement.parentElement.classList.add("highlight");
     console.log(event.target.parentElement.parentElement);
-    setTimeout(() => { event.target.parentElement.parentElement.classList.remove("highlight"); }, j * 4800);
+    setTimeout(() => { event.target.parentElement.parentElement.classList.remove("highlight"); }, 4800);
 }
 
 

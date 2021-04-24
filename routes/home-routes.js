@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Song, User } = require('../models');
+const { Song, User, Comment } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
@@ -81,8 +81,9 @@ router.get('/dashboard', async (req, res) => {
 });
 
 // GET one song
-// Use the custom middleware before allowing the user to access the specific siong
+// Use the custom middleware before allowing the user to access the specific song
 router.get('/song/:id', withAuth, async (req, res) => {
+  console.log(`\n\n test \n\n`)
   try {
     const dbSongData = await Song.findByPk(req.params.id, {
       include: [
@@ -96,7 +97,7 @@ router.get('/song/:id', withAuth, async (req, res) => {
     });
 
     const song = dbSongData.get({ plain: true });
-    res.render('song', { gallery, loggedIn: req.session.loggedIn });
+    res.render('song', { song, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
