@@ -54,7 +54,7 @@ footer {
  .dash-icon {
     font-size: 150px;
     text-align: center;
-    margin-top: 55px;
+    
  }
 
  .dash-icon:hover {
@@ -169,17 +169,29 @@ footer {
     padding: 10px;
 }
 
-div.color1 {
-    background-color: #6e8b4b;
+.color1 {
+    background-color: #efbbff;
 }
-.byte-card.color2 {
-    background-color: #a161a7;
+.color2 {
+    background-color: #d896ff;
 }
-.byte-card.color3 {
-    background-color: #30427c;
+.color3 {
+    background-color: #be29ec;
 }
-.byte-card.color4 {
-    background-color: #b19f67;
+.color4 {
+    background-color: #800080;
+}
+.color5 {
+    background-color: #b3cde0;
+}
+.color6 {
+    background-color: #6497b1;
+}
+.color7 {
+    background-color: #005b96;
+}
+.color8 {
+    background-color: #03396c;
 }
 
 .byte-card {
@@ -198,7 +210,7 @@ div.color1 {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px;
 }
 
@@ -240,6 +252,21 @@ div.color1 {
 .stored {
     background-color: #5e5e5e;
 }
+
+.stored-com {
+    background-color: #242424;
+}
+
+.stored-com:hover {
+    background-color: #444444;
+    /* text-shadow: 0px 0px 5px #adadad; */
+}
+
+.stored.card-body:hover {
+    background-color: #969696;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
 
 .bg-dark-nav {
     background-color:#242424;
@@ -296,14 +323,14 @@ div.color1 {
 
 .card-body-byte {    
     flex: 1 1 auto;
-    min-height: 50px;
-    padding: 15px;
+    min-height: 00px;
+    padding: 0px;
     text-align: center;
 }
 
 .fa-note {
     font-weight: 900;
-    color: #c973ff;
+    color: #000;
     font-size: 40px;
 }
 
@@ -351,4 +378,20 @@ div.color1 {
 
 .draggable.dragging {
     opacity: 50%;
+}
+
+.comments {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.post-body {
+    background-color:blueviolet;
+    height:100%; 
+    border-radius:5px; 
+    padding:8px; 
+    margin:10px
 }
