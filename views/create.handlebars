@@ -13,6 +13,18 @@
         </div>
 
         <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sound Options
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button id="hymn-rhodes-btn" class="btn dropdown-item">Hymn Rhodes</button>
+                <button id="hymn-vibes-btn" class="btn dropdown-item">Hymn Vibes</button>
+                {{!-- <a class="dropdown-item" href="#">Something else here</a> --}}
+            </div>
+        </div>    
+        
+        
+        {{!-- <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sound Options
         </button>
@@ -20,33 +32,60 @@
             <button id="hymn-rhodes-btn"> Hymn_Rhodes </button>
             <button id="hymn-vibes-btn"> Hymn_Vibes </button>
         </div>
-        </div>
+        </div> --}}
         <div class="container-fluid pads">
             <!-- row columns start here -->
             <div id="hymn-rhodes" class="options row hidden">
                 <!--card 1-->
-                <div id="pad1" class="draggable byte-card col-3" index="1" draggable="true" ondragstart="onDragStart(event);">
+                <div id="pad1" class="draggable byte-card col-2" index="1" draggable="true" ondragstart="onDragStart(event);">
                     <div class="card-body-byte">                        
                         <i class="fa fa-note fa-music" aria-hidden="true"></i> 
                         <audio class="sound" src="./audio/Fhymn_rhodes_1.mp3" onplaying="Highlight(event)"></audio>                                               
                     </div>
                 </div>
-                <div id="pad2" class="draggable byte-card col-3" index="2" draggable="true" ondragstart="onDragStart(event);">
+                <div id="pad2" class="draggable byte-card col-2" index="2" draggable="true" ondragstart="onDragStart(event);">
                     <div class="card-body-byte">                        
                         <i class="fa fa-note fa-music" aria-hidden="true"></i>
                         <audio class="sound" src="./audio/Fhymn_rhodes_2.mp3" onplaying="Highlight(event)"></audio>                                                
                     </div>
                 </div>
-                <div id="pad3" class="draggable byte-card col-3" index="3" draggable="true" ondragstart="onDragStart(event);">
+                <div id="pad3" class="draggable byte-card col-2" index="3" draggable="true" ondragstart="onDragStart(event);">
                     <div class="card-body-byte">                        
                         <i class="fa fa-note fa-music" aria-hidden="true"></i>
                         <audio class="sound" src="./audio/Fhymn_rhodes_3.mp3" onplaying="Highlight(event)"></audio>                                                
                     </div>
                 </div>
-                <div id="pad4" class="draggable byte-card col-3" index="4" draggable="true" ondragstart="onDragStart(event);">
+                <div id="pad4" class="draggable byte-card col-2" index="4" draggable="true" ondragstart="onDragStart(event);">
                     <div class="card-body-byte">                        
                         <i class="fa fa-note fa-music" aria-hidden="true"></i>
                         <audio class="sound" src="./audio/Fhymn_rhodes_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="hymn-vibes" class="options row hidden">
+                <!--card 1-->
+                <div id="pad1" class="draggable byte-card col-2" index="1" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Fhymn_vibes_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad2" class="draggable byte-card col-2" index="2" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_vibes_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad3" class="draggable byte-card col-2" index="3" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_vibes_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad4" class="draggable byte-card col-2" index="4" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_vibes_4.mp3" onplaying="Highlight(event)"></audio>                                                
                     </div>
                 </div>
             </div>
@@ -97,8 +136,8 @@
                     </div>
                 </div>                
             </div>
-            <button id="play"> Play </button>
-            <button id="save"> Save </button>
+            <button style="width: 100px;" id="play" type="button" class="btn btn-secondary">Play</button>
+            <button style="width: 100px;" id="save" type="button" class="btn btn-secondary">Save</button>             
         </div>
     </main>
 
