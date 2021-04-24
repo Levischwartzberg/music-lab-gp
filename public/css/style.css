@@ -254,7 +254,7 @@ footer {
 
 .card-body-byte {    
     flex: 1 1 auto;
-    min-height: 1px;
+    min-height: 50px;
     padding: 1.25rem;
     text-align: center;
 }
@@ -279,4 +279,34 @@ footer {
 
 .hide{
     display: none;
+}
+
+/* Create Page Specific Styles */
+.highlight {
+    animation-name: highlight;
+    animation-duration: 5s;
+}
+
+@keyframes highlight {
+    0%   {opacity: 100%}
+    12.5%  {opacity: 50%}
+    25%   {opacity: 100%}
+    37.5%  {opacity: 50%}
+    50%   {opacity: 100%}
+    62.5%  {opacity: 50%}
+    75%  {opacity: 100%}
+    87.5% {opacity: 50%}
+    100%  {opacity: 100%}
+  }
+
+.hidden {
+    display: none;
+}
+
+.draggable {
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: 50%;
 }
