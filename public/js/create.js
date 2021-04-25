@@ -278,6 +278,23 @@ function Highlight(event) {
     setTimeout(() => { event.target.parentElement.parentElement.classList.remove("highlight"); }, 4800);
 }
 
+const clearBtn = document.getElementById("clear");
+
+clearBtn.addEventListener("click", clearMeasures);
+
+function clearMeasures() {
+    const measures = document.querySelectorAll(".measure");
+    console.log(measures);
+    measures.forEach(measure => {
+        console.log(measure.childNodes)
+        if (measure.childNodes.length === 1) {
+            
+        }
+        else {
+            measure.childNodes[1].remove();
+        }
+    })
+}
 
 
 
