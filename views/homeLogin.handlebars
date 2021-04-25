@@ -1,68 +1,65 @@
-<main>        
-        <div class="background">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <h1>Welcome to Music Lab</h1>
-          <h3>Make a Toon, or don't. Up to you.</h3>
-        </div>
-        <div class="container">
-            <!-- row columns start here -->
-            <div id="search-results" class="row">
-                <!--card 1-->
-                <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
-                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
-                    <div class="card-body">                        
-                        <h4 class="card-title">Sign In</h4>
-                        <p class="card-text">Not your first Rodeo? Sign in with your username and password below to create!</p>
-                        <form class='login-form'>
-                            <div class="row">
-                              <label for="inputUN" class="col-sm-4 col-form-label">User Name</label>
-                              <div class="col-sm-12">
-                                <input type="username" class="form-control" id='username-login'>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <label for="inputPW" class="col-sm-4 col-form-label">Password</label>
-                              <div class="col-sm-12">
-                                <input type="password" class="form-control" id='password-login'>
-                              </div>
-                            </div>
-                            <button type="submit" class="home-btn btn-primary">Sign in</button>
-                            <!-- <button type="submit" class="home-btn btn-primary">Create user</button> -->
-                        </form>
-                    </div>
+<main>
+  <!--Header background animation -->        
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <h1>Welcome to Music Lab</h1>
+      <h3>Make a Tune, or don't. It's up to you.</h3>
+    </div>
+    <!--main container-->
+    <div class="container">
+        <div id="search-results" class="row">
+            <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
+                <div class="card-body">                        
+                    <h4 class="card-title">Sign In</h4>
+                    <p class="card-text">Not your first Rodeo? Sign in with your username and password below to start creating!</p>
+                    <form class='login-form'>
+                        <div class="row">
+                          <label for="inputUN" class="col-sm-4 col-form-label">User Name</label>
+                          <div class="col-sm-12">
+                            <input type="username" class="form-control" id='username-login'>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <label for="inputPW" class="col-sm-4 col-form-label">Password</label>
+                          <div class="col-sm-12">
+                            <input type="password" class="form-control" id='password-login'>
+                          </div>
+                        </div>
+                        <button type="submit" class="home-btn btn-primary">Sign in</button>
+                    </form>
                 </div>
-                <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
-                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
-                  <div class="card-body">                        
-                      <h4 class="card-title">Create A User</h4>
-                      <p class="card-text">New to the site? Create your user below to begin to begin the unbeleivable fun times of mixing music!</p>
-                      <form class="signup-form">
-                          <div class="row">
-                            <label for="inputUN" class="col-sm-4 col-form-label">User Name</label>
-                            <div class="col-sm-12">
-                              <input type="username" class="form-control" id='username-signup'>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <label for="inputPW" class="col-sm-4 col-form-label">Password</label>
-                            <div class="col-sm-12">
-                              <input type="password" class="form-control" id='password-signup'>
-                            </div>
-                          </div>
-                          <!-- <button type="submit" class="home-btn btn-primary">Sign in</button> -->
-                          <button type="submit" class="home-btn btn-primary">Create user</button>
-                          <p id="success" style="display: none">{{success}}</p>
-                      </form>
-                  </div>
+            </div>
+            <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
+              <div class="card-body">                        
+                  <h4 class="card-title">Create A User</h4>
+                  <p class="card-text">New to the site? Create your user below to begin the unbeleivable fun times of mixing music!</p>
+                  <form class="signup-form">
+                      <div class="row">
+                        <label for="inputUN" class="col-sm-4 col-form-label">User Name</label>
+                        <div class="col-sm-12">
+                          <input type="username" class="form-control" id='username-signup'>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <label for="inputPW" class="col-sm-4 col-form-label">Password</label>
+                        <div class="col-sm-12">
+                          <input type="password" class="form-control" id='password-signup'>
+                        </div>
+                      </div>
+                      <!-- <button type="submit" class="home-btn btn-primary">Sign in</button> -->
+                      <button type="submit" class="home-btn btn-primary">Create user</button>
+                      <p id="success" style="display: none">{{success}}</p>
+                  </form>
               </div>
           </div>
-        </div>
-    </main>
+      </div>
+    </div>
+</main>
 
 <script src="./js/login.js"></script>
 <script src="./js/logout.js"></script>

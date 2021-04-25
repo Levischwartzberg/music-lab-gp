@@ -1,14 +1,11 @@
 <main>
     <div class="background">
-          <h1>Welcome to Music Lab</h1>
-          <h3>You are on the Dashboard page!</h3>
+          <h1>Music Lab Dashboard</h1>
+          <h3>On this page you can navigate to the create page to create more songs, or community page. You will also find all your saved songs here.</h3>
         </div>
         <div class="container">
-            <!-- row columns start here -->
             <div id="search-results" class="row">
-                <!--card 1-->
                 <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
-                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
                     <a href="./create"><div class="card-body">                        
                         <h4 class="card-title">Create Music</h4>
                         <div class="dash-icon">
@@ -17,81 +14,31 @@
                     </div></a>
                 </div>
                 <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
-                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
                 <a href="./community"><div class="card-body">                        
-                        <h4 class="card-title">Community</h4>
+                        <h4 class="card-title">Music Lab Community</h4>
                         <div class="dash-icon">
                             <i class="dash-icon fas fa-users"></i>
                         </div>
-                        <!-- <p class="card-text">Sign in with your username and password below or click create user button to create user credentials</p>                         -->
                     </div></a>
                 </div>
             </div>
             <div id="search-results" class="row">
-                <!--card 1-->
                 <div class="cust-card-dark col-12">
-                <!-- <img src="./assets/images/Jordan_Pond.jpg" class="card-img-height card-img-top" alt="placeholder"> -->
                     <div class="card-body">                        
                         <h4 class="card-title">Stored Songs</h4>
-                        <p style="text-align: center;" class="card-text">All your stored songs will display below</p>                        
+                        <p style="text-align: center;" class="card-text">All saved songs are listed below</p>                        
                         <div id="search-results" class="row">
-                            <!--card 1-->
                             {{#if songs.length}}
                                 {{#each songs as |song|}}
                                 <div class="comm-card-dark col-lg-12 col-md-10 col-sm-12">
                                     <a style="color: #fff;" href="./song/{{song.id}}:" >
-
                                         <div class="stored card-body">                        
                                             <h4 class="card-title">{{song.title}}</h4>
-                                            {{!-- <p class="card-text">{{song.description}}</p>                         --}}
                                         </div>
                                     </a>    
                                 </div>
                                 {{/each}}
-                            {{/if}}
-                            {{!-- <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                                <a style="color: #fff;" href="./song/1" >
-                                    <div class="stored card-body">                        
-                                        <h4 class="card-title">Song Title 1</h4>
-                                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                                    </div>
-                                </a>    
-                            </div>
-                            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                                <a style="color: #fff;" href="./song/1" >
-                                    <div class="stored card-body">                        
-                                        <h4 class="card-title">Song Title 1</h4>
-                                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                                    </div>
-                                </a>    
-                            </div>
-                        </div>
-                        <div id="search-results" class="row">
-                            <!--card 1-->
-                            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                                <a style="color: #fff;" href="./songs/id:" >
-                                    <div class="stored card-body">                        
-                                        <h4 class="card-title">Really Long Song Title For Some Reason</h4>
-                                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                                    </div>
-                                </a>    
-                            </div>
-                            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                                <a style="color: #fff;" href="./songs/id:" >
-                                    <div class="stored card-body">                        
-                                        <h4 class="card-title">Song Title 1</h4>
-                                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                                    </div>
-                                </a>    
-                            </div>
-                            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                                <a style="color: #fff;" href="./songs/id:" >
-                                    <div class="stored card-body">                        
-                                        <h4 class="card-title">Song Title 1</h4>
-                                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                                    </div>
-                                </a>    
-                            </div> --}}
+                            {{/if}}    
                         </div>
                     </div>
                 </div>                

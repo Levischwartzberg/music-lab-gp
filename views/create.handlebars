@@ -1,172 +1,162 @@
 <main>        
-        <div class="background">
-          <h1>Welcome to Music Lab</h1>
-          <h3>You are on the Create page!</h3>
-        </div>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sound Options
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <button id="hymn-rhodes-btn" class="btn dropdown-item">Hymn Rhodes</button>
-                <button id="hymn-vibes-btn" class="btn dropdown-item">Hymn Vibes</button>
-                {{!-- <a class="dropdown-item" href="#">Something else here</a> --}}
-            </div>
-        </div>    
-        
-        
-        {{!-- <div class="dropdown">
+    <div class="background">
+        <h1>Music Lab Create</h1>
+        <h3>On this page you can choose from the Sounds library and mix them to create your own songs.</h3>
+    </div>
+    <!--sound byte drop down-->
+    <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sound Options
+            Sound Options
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button id="hymn-rhodes-btn"> Hymn_Rhodes </button>
-            <button id="hymn-vibes-btn"> Hymn_Vibes </button>
+            <button id="hymn-rhodes-btn" class="btn dropdown-item">Hymn Rhodes</button>
+            <button id="hymn-vibes-btn" class="btn dropdown-item">Hymn Vibes</button>
+            {{!-- <a class="dropdown-item" href="#">Something else here</a> --}}
         </div>
-        </div> --}}
-        <div class="container-fluid pads">
-            <!-- row columns start here -->
-            <div id="hymn-rhodes" class="options row hidden">
-                <!--card 1-->
-                <div id="pad1" class="draggable byte-card col-2 color1" index="1" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
-                        <audio class="sound" src="./audio/Fhymn_rhodes_1.mp3" onplaying="Highlight(event)"></audio>                                               
-                    </div>
-                </div>
-                <div id="pad2" class="draggable byte-card col-2 color2" index="2" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
-                        <audio class="sound" src="./audio/Fhymn_rhodes_2.mp3" onplaying="Highlight(event)"></audio>                                                
-                    </div>
-                </div>
-                <div id="pad3" class="draggable byte-card col-2 color3" index="3" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
-                        <audio class="sound" src="./audio/Fhymn_rhodes_3.mp3" onplaying="Highlight(event)"></audio>                                                
-                    </div>
-                </div>
-                <div id="pad4" class="draggable byte-card col-2 color4" index="4" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
-                        <audio class="sound" src="./audio/Fhymn_rhodes_4.mp3" onplaying="Highlight(event)"></audio>                                                
-                    </div>
+    </div>        
+    
+    <!-- main container starts here -->
+    <div class="container-fluid pads">
+        <!-- sound byte container -->
+        <div id="hymn-rhodes" class="options row hidden">                
+            <div id="pad1" class="draggable byte-card col-2 color1" index="1" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                    <audio class="sound" src="./audio/Fhymn_rhodes_1.mp3" onplaying="Highlight(event)"></audio>                                               
                 </div>
             </div>
-            <div id="hymn-vibes" class="options row hidden">
-                <!--card 1-->
-                <div id="pad5" class="draggable byte-card col-2 color5" index="5" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
-                        <audio class="sound" src="./audio/Fhymn_vibes_1.mp3" onplaying="Highlight(event)"></audio>                                               
-                    </div>
-                </div>
-                <div id="pad6" class="draggable byte-card col-2 color6" index="6" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
-                        <audio class="sound" src="./audio/Fhymn_vibes_2.mp3" onplaying="Highlight(event)"></audio>                                                
-                    </div>
-                </div>
-                <div id="pad7" class="draggable byte-card col-2 color7" index="7" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
-                        <audio class="sound" src="./audio/Fhymn_vibes_3.mp3" onplaying="Highlight(event)"></audio>                                                
-                    </div>
-                </div>
-                <div id="pad8" class="draggable byte-card col-2 color8" index="8" draggable="true" ondragstart="onDragStart(event);">
-                    <div class="card-body-byte">                        
-                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
-                        <audio class="sound" src="./audio/Fhymn_vibes_4.mp3" onplaying="Highlight(event)"></audio>                                                
-                    </div>
+            <div id="pad2" class="draggable byte-card col-2 color2" index="2" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                    <audio class="sound" src="./audio/Fhymn_rhodes_2.mp3" onplaying="Highlight(event)"></audio>                                                
                 </div>
             </div>
-            <h4 style="color: black;" class="card-title">Dropzone</h4>
-            <p style="text-align: center; font-weight: bold;">Use space below to drop your sound chioces to build and hear your mix.</p>
-            <div id="" class="row">                
-                <!-- main card container -->
-                <div class="dropzone create col-12">
-                    <div id="" class="dropzones drop-row">                        
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                    </div>
-                    <div id="" class="dropzones drop-row">
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                    </div>
-                    <div id="" class="dropzones drop-row">
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                    </div>
-                    <div id="" class="dropzones drop-row">
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                        <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
-                        </div>
-                    </div>
-                </div>                
+            <div id="pad3" class="draggable byte-card col-2 color3" index="3" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                    <audio class="sound" src="./audio/Fhymn_rhodes_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                </div>
             </div>
-            <button style="width: 100px;" id="play" type="button" class="btn btn-secondary">Play</button>
-            {{!-- <button style="width: 100px;" id="save" type="button" class="btn btn-secondary">Save</button> --}}
-            <button style="width: 100px; background-color:red" id="clear" type="button" class="btn btn-danger">Clear</button>
-
-            <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
-                <div class="card-body">                        
-                    <h4 class="card-title">Save Your Creation</h4>
-                    <p style="text-align:center" class="card-text">Give your song a title and description below.</p>
-                    <form class='login-form'>
-                        <div class="row">
-                            <label for="inputTitle" class="col-sm-4 col-form-label">Song Title</label>
-                            <div class="col-sm-12">
-                            <input class="form-control" id="song-title" placeholder="Song Title">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label for="inputDescription" class="col-sm-4 col-form-label">Song Description</label>
-                            <div class="col-sm-12">
-                            <input class="form-control" id="song-description" placeholder="Enter Description Here">
-                            </div>
-                        </div>
-                        <button type="submit" class="home-btn btn-primary" id="save">Save</button>
-                    </form>
+            <div id="pad4" class="draggable byte-card col-2 color4" index="4" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                    <audio class="sound" src="./audio/Fhymn_rhodes_4.mp3" onplaying="Highlight(event)"></audio>                                                
                 </div>
-            </div>  
-
-            <form class="hidden">
-                <div class="form-group">
-                <label for="inputTitle">Song Title</label>
-                <input id="song-title" class="form-control" placeholder="Song1">
-                </div>
-                <div class="form-group">
-                <label for="inputDescription">Song Description</label>
-                <input class="form-control" id="song-description" placeholder="Enter Description Here">
-                </div>
-                <button type="submit" class="btn btn-primary" id="save"> Save </button>
-            </form>           
+            </div>
         </div>
-    </main>
+        <div id="hymn-vibes" class="options row hidden">                
+            <div id="pad5" class="draggable byte-card col-2 color5" index="5" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                    <audio class="sound" src="./audio/Fhymn_vibes_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                </div>
+            </div>
+            <div id="pad6" class="draggable byte-card col-2 color6" index="6" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                    <audio class="sound" src="./audio/Fhymn_vibes_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                </div>
+            </div>
+            <div id="pad7" class="draggable byte-card col-2 color7" index="7" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                    <audio class="sound" src="./audio/Fhymn_vibes_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                </div>
+            </div>
+            <div id="pad8" class="draggable byte-card col-2 color8" index="8" draggable="true" ondragstart="onDragStart(event);">
+                <div class="card-body-byte">                        
+                    <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                    <audio class="sound" src="./audio/Fhymn_vibes_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                </div>
+            </div>
+        </div>
+
+        <!-- drop zone container -->
+        <h4 style="color: black;" class="card-title">Dropzone</h4>
+        <p style="text-align: center; font-weight: bold;">Use space below to drop your sound chioces to build and hear your mix.</p>
+        <div id="" class="row">
+            <div class="dropzone create col-12">
+                <div id="" class="dropzones drop-row">                        
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row1" id="r1c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                </div>
+                <div id="" class="dropzones drop-row">
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row2" id="r2c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                </div>
+                <div id="" class="dropzones drop-row">
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row3" id="r3c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                </div>
+                <div id="" class="dropzones drop-row">
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c1" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c2" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c3" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                    <div class="measure drop-card col-lg-3 col-md-3 col-sm-6 row4" id="r4c4" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <button style="width: 100px;" id="play" type="button" class="btn btn-secondary">Play</button>
+        {{!-- <button style="width: 100px;" id="save" type="button" class="btn btn-secondary">Save</button> --}}
+        <button style="width: 100px; background-color:red" id="clear" type="button" class="btn btn-danger">Clear</button>
+
+        <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
+            <div class="card-body">                        
+                <h4 class="card-title">Save Your Creation</h4>
+                <p style="text-align:center" class="card-text">Give your song a title and description below.</p>
+                <form class='login-form'>
+                    <div class="row">
+                        <label for="inputTitle" class="col-sm-4 col-form-label">Song Title</label>
+                        <div class="col-sm-12">
+                        <input class="form-control" id="song-title" placeholder="Song Title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="inputDescription" class="col-sm-4 col-form-label">Song Description</label>
+                        <div class="col-sm-12">
+                        <input class="form-control" id="song-description" placeholder="Enter Description Here">
+                        </div>
+                    </div>
+                    <button type="submit" class="home-btn btn-primary" id="save">Save</button>
+                </form>
+            </div>
+        </div>  
+        <!-- This is here to make sure the sounds drop down continues to work -->
+        <form class="hidden">
+            <div class="form-group">
+            <label for="inputTitle">Song Title</label>
+            <input id="song-title" class="form-control" placeholder="Song1">
+            </div>
+            <div class="form-group">
+            <label for="inputDescription">Song Description</label>
+            <input class="form-control" id="song-description" placeholder="Enter Description Here">
+            </div>
+            <button type="submit" class="btn btn-primary" id="save"> Save </button>
+        </form>           
+    </div>
+</main>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
