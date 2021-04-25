@@ -1,4 +1,8 @@
-    <main>  
+    <main>
+        <div class="background">
+          <h1>Welcome to Music Lab</h1>
+          <h3>You are on the song page!</h3>
+        </div>  
         <div class="hidden">                        
             <audio class="sound" src="../audio/Fhymn_rhodes_1.mp3"></audio>                                               
         </div> 
@@ -28,24 +32,13 @@
             {{song.song_data}}                                               
         </div>  
 
-        <div class="hero jumbotron jumbotron-fluid">
-            <div class="container">
-            <h1 class="display-4">Welcome to Music Lab</h1>
-            <p class="lead"><span style="color: white;">An app for creating music using various sounds. Users can pick and choose sounds and mix together to create music files of their own</span></p>
-            <!-- <form class="form-inline my-2 my-lg-2">
-                <div>
-                    <input id="citysearch" class="form-ctrl mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button id="searchBtn" class="src-btn btn-outline-success" type="submit">Search</button>
-                </div>
-            </form> -->
-            </div>
-        </div>
+        
         <div class="container">
             <div id="search-results" class="row">
                 <!--song display card-->
                 <div class="cust-card-dark col-6">
                     <div class="card-body">
-                        <h2>{{song.title}}</h2>
+                        <h2 style="text-align:center">{{song.title}}</h2>
                         <a id="play" style="color: #fff;" href="" >    
                             <div class="dash-icon">
                                 <i class="fas fa-play-circle"></i>
@@ -60,13 +53,13 @@
                 <div class="cust-card-dark col-12">
                 <h4 style="padding-top: 15px;" class="card-title">Community Posts</h4>
                     <div class="card-body comments">                        
+                        {{#each song.comments as |comment|}}
                         <div  style="text-align: right;">
                             <div class="post-body">
-                                {{#each song.comments as |comment|}}
                                 <p class="card-text">{{comment.comment}}<span style="font-weight: bold; padding:5px">- {{comment.user_name}}</span></p>
-                                {{/each}}  
                             </div>
-                        </div>    
+                        </div>
+                        {{/each}}    
                     </div>
                 </div>                
             </div>
