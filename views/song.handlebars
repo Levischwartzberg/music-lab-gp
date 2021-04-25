@@ -11,6 +11,18 @@
         <div class="hidden">                        
             <audio class="sound" src="../audio/Fhymn_rhodes_4.mp3"></audio>                                               
         </div> 
+         <div class="hidden">                        
+            <audio class="sound" src="../audio/Fhymn_vibes_1.mp3"></audio>                                               
+        </div> 
+        <div class="hidden">                        
+            <audio class="sound" src="../audio/Fhymn_vibes_2.mp3"></audio>                                               
+        </div>    
+        <div class="hidden">                        
+            <audio class="sound" src="../audio/Fhymn_vibes_3.mp3"></audio>                                               
+        </div>  
+        <div class="hidden">                        
+            <audio class="sound" src="../audio/Fhymn_vibes_4.mp3"></audio>                                               
+        </div> 
 
         <div id="song-data" class="hidden">                        
             {{song.song_data}}                                               
@@ -60,7 +72,7 @@
             </div>
             
             <div class="flex-row">
-                <textarea class="form-control textarea" id="comment-content" data-id={{id}} placeholder="Leave a comment..."></textarea>
+                <textarea class="form-control textarea" id="comment-content" data-id={{song.id}} placeholder="Leave a comment..."></textarea>
             </div>
             <div class="mt-2 text-right">
                 <button class="btn btn-danger btn-sm shadow-none" id="commentBtn" type="button">Submit</button>
@@ -72,4 +84,3 @@
 {{!-- <script src="/js/create.js"></script> --}}
 {{!-- <script src="/js/post.js"></script> --}}
 <script src="/js/song.js"></script>
-<script src="/js/comment.js"></script>

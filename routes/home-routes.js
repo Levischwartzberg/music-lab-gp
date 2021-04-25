@@ -54,9 +54,14 @@ router.get('/dashboard', async (req, res) => {
   if (req.session.logged_in) {
     try {
       const dbSongData = await Song.findAll({
-        where: {user_id: req.session.user_id}
+        include: 
+          {
+            model: User,
+            attributes: ["username"] 
+          },
+        where: {user_id: req.session.user_id},
       });
-      console.log(req.session.user_id); 
+      console.log(dbSongData); 
   
       const songs = dbSongData.map((song) =>
         song.get({ plain: true })
