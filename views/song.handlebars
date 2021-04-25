@@ -16,61 +16,26 @@
                 <!--song display card-->
                 <div class="cust-card-dark col-6">
                     <div class="card-body">
-                        {{#if songs.length}}
-                            {{#each songs as |song|}}
-                        ````<h4 class="card-title">{{song.title}}</h4>
-                            {{/each}}
-                        {{/if}}
-                        <a id="play" style="color: #fff;" href="./songs/id:" >    
+                        <h2>{{song.title}}</h2>
+                        <a id="play" style="color: #fff;" href="" >    
                             <div class="dash-icon">
                                 <i class="fas fa-play-circle"></i>
                             </div>
                         </a>
                     </div>
                 </div>                             
-            </div>            
+            </div>   
+            <p>{{song.description}}</p>   
             <div id="search-results" class="row">
                 <!--community posts card-->
                 <div class="cust-card-dark col-12">
                 <h4 style="padding-top: 15px;" class="card-title">Community Posts</h4>
                     <div class="card-body comments">                        
                         <div  style="text-align: right;">
-                            {{!-- {{#if posts}}
                             <div class="post-body">
-                                {{#each posts as |post| }}                                
-                                <p class="card-text"{{post.description}}!<span style="font-weight: bold; padding:5px">{{post.user.name}} on {{format_date createdAt}}</span></p>                                
-                                {{/each}}
-                            </div>
-                            {{/if}} --}}
-                            <div class="post-body">
-                                <p class="card-text">How do you make your fingers work so fast?!?!<span style="font-weight: bold; padding:5px">~UserName</span></p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">So good.<span style="font-weight: bold; padding:5px">~UserName</span></p>
-                            </div>                          
-                            <div class="post-body">
-                                <p class="card-text">When is someone going to sign this person?!?!?! <span style="font-weight: bold; padding:5px">~UserName</span></p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
-                            </div>
-                            <div class="post-body">
-                                <p class="card-text">Post 1</p>
+                                {{#each song.comments as |comment|}}
+                                <p class="card-text">{{comment.comment}}<span style="font-weight: bold; padding:5px">- {{comment.user_name}}</span></p>
+                                {{/each}}  
                             </div>
                         </div>    
                     </div>

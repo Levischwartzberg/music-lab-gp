@@ -3,9 +3,13 @@ const { Song } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
+  console.log(`\n\n test \n\n`)
+  console.log(req.body)
   try {
     const newSong = await Song.create({
-      ...req.body,
+      title: req.body.title,
+      description: req.body.description,
+      song_data: req.body.data,
       user_id: req.session.user_id,
     });
 

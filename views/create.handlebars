@@ -137,8 +137,20 @@
                 </div>                
             </div>
             <button style="width: 100px;" id="play" type="button" class="btn btn-secondary">Play</button>
-            <button style="width: 100px;" id="save" type="button" class="btn btn-secondary">Save</button>
-            <button style="width: 100px; background-color:red" id="clear" type="button" class="btn btn-danger">Clear</button>             
+            {{!-- <button style="width: 100px;" id="save" type="button" class="btn btn-secondary">Save</button> --}}
+            <button style="width: 100px; background-color:red" id="clear" type="button" class="btn btn-danger">Clear</button>  
+
+            <form>
+                <div class="form-group">
+                <label for="inputTitle">Song Title</label>
+                <input id="song-title" class="form-control" placeholder="Song1">
+                </div>
+                <div class="form-group">
+                <label for="inputDescription">Song Description</label>
+                <input class="form-control" id="song-description" placeholder="Enter Description Here">
+                </div>
+                <button type="submit" class="btn btn-primary" id="save"> Save </button>
+            </form>           
         </div>
     </main>
 
