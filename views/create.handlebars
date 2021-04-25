@@ -138,9 +138,31 @@
             </div>
             <button style="width: 100px;" id="play" type="button" class="btn btn-secondary">Play</button>
             {{!-- <button style="width: 100px;" id="save" type="button" class="btn btn-secondary">Save</button> --}}
-            <button style="width: 100px; background-color:red" id="clear" type="button" class="btn btn-danger">Clear</button>  
+            <button style="width: 100px; background-color:red" id="clear" type="button" class="btn btn-danger">Clear</button>
 
-            <form>
+            <div class="cust-card-dark col-lg-5 col-md-10 col-sm-12">
+                <div class="card-body">                        
+                    <h4 class="card-title">Save Your Creation</h4>
+                    <p style="text-align:center" class="card-text">Give your song a title and description below.</p>
+                    <form class='login-form'>
+                        <div class="row">
+                            <label for="inputTitle" class="col-sm-4 col-form-label">Song Title</label>
+                            <div class="col-sm-12">
+                            <input class="form-control" id="song-title" placeholder="Song Title">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="inputDescription" class="col-sm-4 col-form-label">Song Description</label>
+                            <div class="col-sm-12">
+                            <input class="form-control" id="song-description" placeholder="Enter Description Here">
+                            </div>
+                        </div>
+                        <button type="submit" class="home-btn btn-primary" id="save">Save</button>
+                    </form>
+                </div>
+            </div>  
+
+            <form class="hidden">
                 <div class="form-group">
                 <label for="inputTitle">Song Title</label>
                 <input id="song-title" class="form-control" placeholder="Song1">
