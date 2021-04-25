@@ -1,20 +1,12 @@
 <main>        
-    <div class="hero jumbotron jumbotron-fluid">
-        <div class="container">
-        <h1 class="display-4">Welcome to Music Lab</h1>
-        <p class="lead"><span style="color: white;">You are </span></p>
-        <!-- <form class="form-inline my-2 my-lg-2">
-            <div>
-                <input id="citysearch" class="form-ctrl mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button id="searchBtn" class="src-btn btn-outline-success" type="submit">Search</button>
-            </div>
-        </form> -->
-        </div>
+    <div class="background">
+          <h1>Welcome to Music Lab</h1>
+          <h3>You are on the Community page!</h3>
     </div>
     <div class="container">
         <!-- row columns start here -->
         <div id="search-results" class="row">
-            {{#if songs.length}}
+        {{#if songs.length}}
                 {{#each songs as |song|}}   
                     <div class="stored-com comm-card-dark col-lg-3 col-md-10 col-sm-12 ml-1">
                         <a style="color: #fff;" href="./song/{{song.id}}" >
@@ -26,60 +18,8 @@
                         </a>    
                     </div>
                 {{/each}}
-            {{/if}}
-            <!--card 1-->
-            {{!-- <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                <a style="color: #fff;" href="./blog.html" >
-                    <div class="card-body">                        
-                        <h4 class="card-title">Song Title 1</h4>
-                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                    </div>
-                </a>    
-            </div>
-            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                <a style="color: #fff;" href="./blog.html" >
-                    <div class="card-body">                        
-                        <h4 class="card-title">Song Title 1</h4>
-                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                    </div>
-                </a>    
-            </div>
-            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                <a style="color: #fff;" href="./blog.html" >
-                    <div class="card-body">                        
-                        <h4 class="card-title">Song Title 1</h4>
-                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                    </div>
-                </a>    
-            </div>
-        </div>
-        <div id="search-results" class="row">
-            <!--card 1-->
-            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                <a style="color: #fff;" href="./blog.html" >
-                    <div class="card-body">                        
-                        <h4 class="card-title">Song Title 1</h4>
-                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                    </div>
-                </a>    
-            </div>
-            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                <a style="color: #fff;" href="./blog.html" >
-                    <div class="card-body">                        
-                        <h4 class="card-title">Song Title 1</h4>
-                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                    </div>
-                </a>    
-            </div>
-            <div class="comm-card-dark col-lg-3 col-md-10 col-sm-12">
-                <a style="color: #fff;" href="./blog.html" >
-                    <div class="card-body">                        
-                        <h4 class="card-title">Song Title 1</h4>
-                        <p class="card-text">Posted songs will display here from all users for others to hear.</p>                        
-                    </div>
-                </a>    
-            </div>
-        </div> --}}
+            {{/if}
+         </div>   
     </div>
 </main>
 
