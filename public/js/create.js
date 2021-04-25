@@ -157,7 +157,8 @@ function playGrid() {
 const saveBtn = document.getElementById("save");
 saveBtn.addEventListener("click", saveGrid);
 
-function saveGrid() {
+function saveGrid(event) {
+    event.preventDefault();
     // const sounds = document.querySelectorAll(".sound");
     const sounds = []
 
@@ -186,7 +187,41 @@ function saveGrid() {
     }
     console.log(JSON.stringify(savedArray));
     // playSaved(JSON.stringify(savedArray));
-    return savedArray;
+    let title = document.getElementById("song-title").value; 
+    let description = document.getElementById("song-description").value;
+    const songObj = {};
+
+    if (title === "") {
+        alert("You must enter a title for your song.");
+        return;
+    }
+    else {
+        soundObj = {
+            title: title,
+            description: description,
+            data: JSON.stringify(savedArray),
+        };
+        console.log(soundObj);
+        postGrid(soundObj);
+    }
+    // playSaved(savedArray);
+    console.log(JSON.stringify(savedArray));
+}
+
+const postGrid = async (soundObj) => {
+    const response = await fetch(`/api/songs/`, {
+        method: 'POST',
+        body: JSON.stringify(soundObj),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+    
+      if (response.ok) {
+        document.location.replace('/dashboard');
+      } else {
+        alert('Failed to create project');
+      }
 }
 
 function playSaved(savedBeat) {
