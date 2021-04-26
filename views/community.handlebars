@@ -1,10 +1,9 @@
 <main>        
     <div class="background">
-          <h1>Welcome to Music Lab</h1>
-          <h3>You are on the Community page!</h3>
+          <h1>Music Lab Community</h1>
+          <h3>Here you will find all songs created by other users, feel free to choose any song to listen to and make comments.</h3>
     </div>
     <div class="container">
-        <!-- row columns start here -->
         <div id="search-results" class="row">
         {{#if songs.length}}
                 {{#each songs as |song|}}   
@@ -18,7 +17,7 @@
                         </a>    
                     </div>
                 {{/each}}
-            {{/if}
+            {{/if}}
          </div>   
     </div>
 </main>
