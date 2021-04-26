@@ -11,6 +11,14 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <button id="hymn-rhodes-btn" class="btn dropdown-item">Hymn Rhodes</button>
                 <button id="hymn-vibes-btn" class="btn dropdown-item">Hymn Vibes</button>
+                <button id="hymn-bass-btn" class="btn dropdown-item">Hymn Bass</button>
+                <button id="cmin-rhodes-btn" class="btn dropdown-item">Electro Rhodes</button>
+                <button id="cmin-synth-btn" class="btn dropdown-item">Electro Synth</button>
+                <button id="cmin-strings-btn" class="btn dropdown-item">Electro Strings</button>
+                <button id="dmin-piano-btn" class="btn dropdown-item">Cha Cha Piano</button>
+                <button id="dmin-marimba-btn" class="btn dropdown-item">Cha Cha Marimba</button>
+                <button id="dmin-bass-btn" class="btn dropdown-item">Cha Cha Bass</button>
+                <button id="percussion-btn" class="btn dropdown-item">Percussion</button>
                 {{!-- <a class="dropdown-item" href="#">Something else here</a> --}}
             </div>
         </div>    
@@ -78,6 +86,222 @@
                     <div class="card-body-byte">                        
                         <i class="fa fa-note fa-music" aria-hidden="true"></i>
                         <audio class="sound" src="./audio/Fhymn_vibes_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="hymn-bass" class="options row hidden">
+                <!--card 1-->
+                <div id="pad9" class="draggable byte-card col-2 color5" index="9" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Fhymn_bass_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad10" class="draggable byte-card col-2 color6" index="10" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_bass_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad11" class="draggable byte-card col-2 color7" index="11" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_bass_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad12" class="draggable byte-card col-2 color8" index="12" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Fhymn_bass_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="cmin-rhodes" class="options row hidden">
+                <!--card 1-->
+                <div id="pad13" class="draggable byte-card col-2 color5" index="13" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Cmin_rhodes_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad14" class="draggable byte-card col-2 color6" index="14" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_rhodes_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad15" class="draggable byte-card col-2 color7" index="15" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_rhodes_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad16" class="draggable byte-card col-2 color8" index="16" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_rhodes_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="cmin-synth" class="options row hidden">
+                <!--card 1-->
+                <div id="pad17" class="draggable byte-card col-2 color5" index="17" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Cmin_synth_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad18" class="draggable byte-card col-2 color6" index="18" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_synth_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad19" class="draggable byte-card col-2 color7" index="19" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_synth_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad20" class="draggable byte-card col-2 color8" index="20" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_synth_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="cmin-strings" class="options row hidden">
+                <!--card 1-->
+                <div id="pad21" class="draggable byte-card col-2 color5" index="21" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Cmin_strings_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad22" class="draggable byte-card col-2 color6" index="22" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_strings_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad23" class="draggable byte-card col-2 color7" index="23" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_strings_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad24" class="draggable byte-card col-2 color8" index="24" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Cmin_strings_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="dmin-piano" class="options row hidden">
+                <!--card 1-->
+                <div id="pad25" class="draggable byte-card col-2 color5" index="25" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Dmin_piano_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad26" class="draggable byte-card col-2 color6" index="26" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_piano_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad27" class="draggable byte-card col-2 color7" index="27" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_piano_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad28" class="draggable byte-card col-2 color8" index="28" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_piano_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="dmin-marimba" class="options row hidden">
+                <!--card 1-->
+                <div id="pad29" class="draggable byte-card col-2 color5" index="29" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Dmin_marimba_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad30" class="draggable byte-card col-2 color6" index="30" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_marimba_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad31" class="draggable byte-card col-2 color7" index="31" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_marimba_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad32" class="draggable byte-card col-2 color8" index="32" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_marimba_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="dmin-bass" class="options row hidden">
+                <!--card 1-->
+                <div id="pad33" class="draggable byte-card col-2 color5" index="33" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/Dmin_bass_1.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad34" class="draggable byte-card col-2 color6" index="34" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_bass_2.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad35" class="draggable byte-card col-2 color7" index="35" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_bass_3.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad36" class="draggable byte-card col-2 color8" index="36" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_bass_4.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+            </div>
+            <div id="percussion" class="options row hidden">
+                <!--card 1-->
+                <div id="pad37" class="draggable byte-card col-2 color5" index="37" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i> 
+                        <audio class="sound" src="./audio/CongaGroove.mp3" onplaying="Highlight(event)"></audio>                                               
+                    </div>
+                </div>
+                <div id="pad38" class="draggable byte-card col-2 color6" index="38" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/BeyondDeepBeat.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad39" class="draggable byte-card col-2 color7" index="39" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_drums.mp3" onplaying="Highlight(event)"></audio>                                                
+                    </div>
+                </div>
+                <div id="pad40" class="draggable byte-card col-2 color8" index="40" draggable="true" ondragstart="onDragStart(event);">
+                    <div class="card-body-byte">                        
+                        <i class="fa fa-note fa-music" aria-hidden="true"></i>
+                        <audio class="sound" src="./audio/Dmin_drums_end.mp3" onplaying="Highlight(event)"></audio>                                                
                     </div>
                 </div>
             </div>
