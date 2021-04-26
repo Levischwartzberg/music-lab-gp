@@ -408,7 +408,7 @@ header {
 
 .background {
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   background: #3e1e68;
   border-bottom: 20px solid #270e47;
   margin-bottom: 50px;
@@ -420,7 +420,7 @@ header {
   z-index: 100;
   font-weight: 200;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
   color: #fff;
   margin: 0;
   text-shadow: 0px 11px 17px rgb(39 14 71 / 98%);
