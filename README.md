@@ -17,11 +17,10 @@
 
 
 <!-- PROJECT LOGO -->
+[![Music Lab][product-screenshot]](https://example.com)
 <br />
 <p align="center">
-  <a href="#">
-    <img src="/public/images/MusiclabLogo.png" alt="Logo"/>
-  </a>
+
 
   <h3 align="center">Music Lab</h3>
 
@@ -71,8 +70,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Simple app to make music to share with a community of people interested in the same thing.
 
 ### Our Idea
 To create a music app that would allow users to create songs that they could share
