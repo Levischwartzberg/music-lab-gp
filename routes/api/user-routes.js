@@ -16,10 +16,7 @@ router.post('/', async (req, res) => {
       req.session.logged_in = true;
 
       res.json({ user: userData, message: 'You are now logged in!' });
-      res.render('dashboard', { 
-        posts, 
-        logged_in: req.session.logged_in 
-      });
+
     });
   } catch (err) {
     res.status(400).json(err);
