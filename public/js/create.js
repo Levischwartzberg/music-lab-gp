@@ -147,7 +147,7 @@ function playGrid() {
                 else {
                     // setTimeout(() => { sounds[index-1].currentTime = 0; sounds[index-1].play(); }, j * 4800);
                     let index = (4*i)+j;
-                    setTimeout(() => { console.log(sounds[index]); sounds[index].currentTime = 0; sounds[index].play(); }, j * 4800+10*i)
+                    setTimeout(() => { console.log(sounds[index]); sounds[index].currentTime = 0; sounds[index].play(); }, j * 4800+0*i)
                 }
             }
         }
